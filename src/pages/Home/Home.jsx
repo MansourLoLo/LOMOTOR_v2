@@ -5,6 +5,7 @@ import Footer from "../../components/footer/Footer";
 import ExploreAllCars from "../../components/explore_all_cars/ExploreAllCars";
 import DiscoverBentoGrids from "../../components/discover-bento-grids/DiscoverBentoGrids";
 import Carrusel from '../../components/carrusel/Carrusel';
+import CarsList from "../../components/car-list/CarsList";
 
 function Home() {
 
@@ -21,11 +22,13 @@ function Home() {
        <Carrusel  posVideo={0}/>
       </div>
 
+
       {/* Porque el boton sube cuando tiene que estar quieto con un position absolute */}
       <ExploreAllCars />
 
       <DiscoverBentoGrids/>
 
+      <CarsList />
       <Footer />
     </>
   );
