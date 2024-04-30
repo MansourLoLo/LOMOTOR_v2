@@ -141,12 +141,12 @@
           background-color: var(--primaryColor);
           z-index: -1;
         }
-        .btn:hover{
+        .btn:hover {
           background-color: transparent;
           color: var(--primaryColor);
         }
-        .btn:active{
-          transform: scale(.8);
+        .btn:active {
+          transform: scale(0.8);
           color: var(--primaryFontColor);
         }
       }
@@ -206,9 +206,9 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .license-container {
-    flex-direction: column; 
-    .license{
-      .policies-container{
+    flex-direction: column;
+    .license {
+      .policies-container {
         flex-direction: column;
         min-height: 50px;
       }

@@ -8,11 +8,13 @@ import {
   faXTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { MapContainer , TileLayer} from "react-leaflet"
 
 export default function Footer({
   logoFooter = "/src/assets/svg/Logo_Lomotor_v2_logo_black.svg",
-  logoFooterCredits = "/src/assets/svg/Logo_Lomotor_v2_logo_black.svg"
+  logoFooterCredits = "/src/assets/svg/Logo_Lomotor_v2_logo_black.svg",
 }) {
+
   return (
     <>
       <footer className="footer">
@@ -25,22 +27,18 @@ export default function Footer({
             <FontAwesomeIcon className="social-media-icon" icon={faInstagram} />
             <FontAwesomeIcon className="social-media-icon" icon={faXTwitter} />
             <a href="https://github.com/MansourLoLo/LOMOTOR_v2">
-            <FontAwesomeIcon className="social-media-icon" icon={faGithub} />
+              <FontAwesomeIcon className="social-media-icon" icon={faGithub} />
             </a>
           </div>
         </div>
         <div className="find-us-container">
           <h2>Find us</h2>
-          {/* <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.0885863227622!2d-103.7335295257109!3d19.234970646964495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84254fff96ee7649%3A0x4cacce25ddb8252!2sLOMOTOR!5e0!3m2!1ses!2ses!4v1712651742872!5m2!1ses!2ses"
-            width="600"
-            height="450"
-            style="border:0;"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe> */}
-          <img src="/images/map.png" alt="Lomotor ubication" />
+            <MapContainer center={[19.234933189775774, -103.73096267069738]} zoom={10}>
+              <TileLayer 
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+            </MapContainer>
           <p>123 Main Street, San Francisco, CA, 94105</p>
         </div>
         <div className="suscribe-container">

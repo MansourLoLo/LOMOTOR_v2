@@ -8,6 +8,7 @@ import Contact from './pages/Contact/Contact.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+
     <BrowserRouter>
       <Routes>
         <Route path='' element={<Home />}/>
@@ -18,5 +19,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/Contact' element={<Contact />}/>
       </Routes>
     </BrowserRouter>
+    
   </React.StrictMode>,
 )
