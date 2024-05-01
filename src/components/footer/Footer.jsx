@@ -8,13 +8,12 @@ import {
   faXTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import { MapContainer , TileLayer} from "react-leaflet"
+import LeafletMap from "../leaflet/LeafletMap";
 
 export default function Footer({
   logoFooter = "/src/assets/svg/Logo_Lomotor_v2_logo_black.svg",
   logoFooterCredits = "/src/assets/svg/Logo_Lomotor_v2_logo_black.svg",
 }) {
-
   return (
     <>
       <footer className="footer">
@@ -33,13 +32,9 @@ export default function Footer({
         </div>
         <div className="find-us-container">
           <h2>Find us</h2>
-            <MapContainer center={[19.234933189775774, -103.73096267069738]} zoom={10}>
-              <TileLayer 
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-            </MapContainer>
-          <p>123 Main Street, San Francisco, CA, 94105</p>
+          <div className="map-container-leaflet">
+            <LeafletMap coordinates={[19.234933189775774, -103.73096267069738]}/>
+          </div>
         </div>
         <div className="suscribe-container">
           <div className="suscribe-title">
@@ -65,9 +60,9 @@ export default function Footer({
               <h4>@ Lomotor 2024. All rights reserved</h4>
             </div>
             <div className="policies">
-              <h4>Legal notice</h4>
-              <h4>Privacy Policy</h4>
-              <h4>Cookie Policy</h4>
+              <h4> <a href="https://www.brabus.com/en-int/GDPR.html"> Legal notice </a> </h4>
+              <h4> <a href="https://www.brabus.com/en-int/GDPR.html"> Privacy Policy </a> </h4>
+              <h4> <a href="https://www.brabus.com/en-int/GDPR.html"> Cookie Policy </a> </h4>
             </div>
           </div>
         </div>

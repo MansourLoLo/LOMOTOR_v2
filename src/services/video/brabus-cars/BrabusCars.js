@@ -1,5 +1,6 @@
-let videos = [
+const videos = [
   {
+    id: 0,
     title: "Video de conduccion de un brabus rocket 1000 por distintos ambientes y lugares",
     description: "Este video se puede usar para fondos de paginas web sobre coches y para landing pages",
       preload: "none",
@@ -11,6 +12,7 @@ let videos = [
       type: "video/mp4"
   },
   {
+    id: 1,
     title: "Video de un brabus 930 con etiqueta masterpiece",
     description: "Este video se puede usar para fondos de paginas web sobre coches y para landing pages",
       preload: "none",
@@ -22,6 +24,7 @@ let videos = [
       type: "video/mp4"
   },
   {
+    id: 2,
     title: "Video de la conduccion de un brabus 900 rocket",
     description: "Este video se puede usar para fondos de paginas web sobre coches y para landing pages",
       preload: "none",
@@ -33,6 +36,7 @@ let videos = [
       type: "video/mp4"
   },
   {
+    id: 3,
     title: "Video de la conduccion de brabus 750",
     description: "Este video se puede usar para fondos de paginas web sobre coches y para landing pages es un mercedes clase A edition Bood Buschman",
       preload: "none",
@@ -44,6 +48,7 @@ let videos = [
       type: "video/mp4"
   },
   {
+    id: 4,
     title: "Evento presesentacion de coches",
     description: "Un persona nos informa de un evento en 2023 sobre una presentacion de coches",
       preload: "none",

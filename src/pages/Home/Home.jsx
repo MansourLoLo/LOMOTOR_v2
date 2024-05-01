@@ -5,7 +5,6 @@ import Footer from "../../components/footer/Footer";
 import ExploreAllCars from "../../components/explore_all_cars/ExploreAllCars";
 import DiscoverBentoGrids from "../../components/discover-bento-grids/DiscoverBentoGrids";
 import Carrusel from '../../components/carrusel/Carrusel';
-import CarsList from "../../components/car-list/CarsList";
 
 function Home() {
 
@@ -18,8 +17,7 @@ function Home() {
       />
 
       <div className="container-video">
-      {/* playsInline preload="none" muted loop autoPlay */}
-       <Carrusel  posVideo={0}/>
+       <Carrusel/>
       </div>
 
 
@@ -27,8 +25,6 @@ function Home() {
       <ExploreAllCars />
 
       <DiscoverBentoGrids/>
-
-      <CarsList />
       <Footer />
     </>
   );
