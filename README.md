@@ -5,19 +5,30 @@ Lomotor is inspired by Brabus meticulousness and commitment to excellence, but f
 ![Img page](/public/images/page.png)
 
 
-### Built With
+### 🔩 Built With
 
-[![React][React.js]][React-url]
+* [![React][React.js]][React-url]
 
-### Tools Used
+---
+## 🔨 Tools Used
 
-``CSS: Pure CSS for styling the web pages.``
+CSS: Pure CSS for styling the web pages.
 
-``FontAwesome: Icon library used for adding aesthetic and functional icons to the projects.``
+FontAwesome: Icon library used for adding aesthetic and functional icons to the projects.
 
 ---
 
-📚 Tutorials and Resources
+## Getting Started
+
+* npm
+```
+npm install
+```
+
+
+---
+
+## 📚 Tutorials and Resources
 
 The following tutorials have been instrumental in the development of projects showcased in this portfolio:
 
@@ -29,139 +40,156 @@ The following tutorials have been instrumental in the development of projects sh
 
   [Animated car website using Html & Css & Js || How to create a website using Html](https://youtu.be/PTDn-yp4JR0?si=WcKMb-IDStPhInBQ) by Magic Code
 
+**Figma project:** 
+
+https://www.figma.com/file/WFmoNA63QvpzPSGzEocS1U/LOMOTOR-V2?type=design&node-id=0%3A1&mode=design&t=eX6S8QCt2kLUUL8a-1 
+
 ---
 
-📖 Consulted Sources
+## 📖 Consulted Sources
 
 The design and functionality of this portfolio have been influenced and inspired by various automotive and web design sources. Here are the key elements and inspirations drawn from these sources:
-Automotive Websites
 
-Brabus
+**Brabus**
 
     Main Content: Focus on main content with a base structure and video in the main content area.
     Simplicity: Clean and simple design with a limited color palette.
 
-BMW
+**BMW**
 
     Image Roulette: Implementation and layout of an image roulette.
 
-Mercedes
+**Mercedes**
 
     Initial Page Animation: Initial animation for page loading.
     Header: Design and layout of the header.
     Content Display Animations: Animations for content display as it appears.
 
-Audi
+**Audi**
 
     Content and Image Distribution: Layout and distribution of content and images.
     Simplicity: Focus on simplicity.
 
-Cupra
+**Cupra**
 
     Car and Feature Roulette: Implementation and layout of a car and feature roulette.
 
-Mansory
+**Mansory**
 
     Header and Images: Design and layout of the header and images.
     Mansory News: Display of Mansory news.
     Hover Effects: Hover effects on images.
 
-Porsche
+**Porsche**
 
     Location Finder for New Porsche: Implementation of a location finder.
     Car Configuration: Car configuration tool.
 
-Toyota
+**Toyota**
 
     Footer: Design and layout of the footer.
     "Explore All Vehicles" Information: Information and display related to "explore all vehicles".
 
-Honda
+**Honda**
 
     Page Layout: Use of straight and aligned bento grids.
     Creative and Playful Grid Display: Display grid with a creative, childlike, and playful design.
     Footer: Design and layout of the footer.
 
-Hyundai
+**Hyundai**
 
     Car Stock and Variety: Display of car stock and variety.
 
-Fiat
+**Fiat**
 
     Colorful and Vibrant Bento Grids: Implementation of colorful and vibrant bento grids.
 
-Ford
+**Ford**
 
     Dynamic Header: Header that dynamically changes font, color, and background on hover.
 
-Lexus
+**Lexus**
 
     Single Button Car Color Change: Ability to change car color with a single button.
     Investigation Required: Further investigation on how to achieve this feature.
 
-Mazda
+**Mazda**
 
     Technology Photos: Photos showcasing technology in cars.
     Nickel-Iron Photos: Photos of shiny nickel-iron, e.g., wavy metal tubes.
 
-MG Motor
+**MG Motor**
 
     Automotive Technology Bento Grids: Bento grids showcasing automotive technology.
     Car Fuel Types Classification: Classification of car fuel types and ordered with flex.
 
-MINI
+**MINI**
 
     Revealing Elements: Elements that reveal as you scroll.
     Main Logo: Display and design of the main logo.
 
-Nissan
+**Nissan**
 
     Header with Icons and Logo: Design and layout of the header.
 
-Alfa Romeo
+**Alfa Romeo**
 
     Colors and Themes: Exploration of colors and themes.
     Wheels and Lights: Focus on wheels and lights.
     Car Museum: Display of a car museum.
     Footer: Design and layout of the footer.
 
-Peugeot
+**Peugeot**
 
     Footer Layout: Design and layout of the footer.
 
-Polestar
+**Polestar**
 
     Super Clean Design: Implementation of a super clean design.
 
-Platinum Motorsport
+**Platinum Motorsport**
 
     Wheel Images: Display of wheel images.
 
-Restomod Classic
+**Restomod Classic**
 
     Scroll Animations: Implementation of scroll animations.
 
-RoCars
+**RoCars**
 
     Page Videos: Use of videos for the webpage.
 
 ---
 
-⚙️ Technologies Used
+## ⚙️ Technologies Used
 
-    React.js: Frontend development library for building dynamic user interfaces.
-    CSS: Styling and layout of web pages using pure CSS.
-    FontAwesome: Integration of icons to enhance visual appeal and user experience.
+### React.js: 
+**Frontend development library for building dynamic user interfaces.**
+
+### CSS: 
+Styling and layout of web pages using pure CSS.
+
+### FontAwesome: 
+Integration of icons to enhance visual appeal and user experience.
+
+### Leaflet: 
+Interactive JavaScript Maps
 
 ---
 
-🕒 Future Improvements
+## 🕒 Future Improvements
 
-    Accessibility: Implementing accessibility features to ensure inclusivity.
-    SEO Optimization: Enhancing search engine visibility through SEO best practices.
-    Interactive Features: Adding more interactive elements to engage users and enhance user experience.
+**Accessibility**: Implementing accessibility features to ensure inclusivity.
+
+**SEO Optimization**: Enhancing search engine visibility through SEO best practices.
+
+**Interactive Features**: Adding more interactive elements to engage users (UI) and enhance user experience (UX).
+
+**Firebase database**: Data base for the images, videos and information of the page.
 
 
 ---
 
 For inquiries or collaboration opportunities, feel free to reach out via email at mansour.lolo.06@gmail.com or through LinkedIn.
+
+By Mansour Lo Lo 
