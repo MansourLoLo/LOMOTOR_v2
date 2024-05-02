@@ -2,11 +2,10 @@ import React from "react";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
   faGithub,
-  faInstagram,
+  faLinkedin,
   faXTwitter,
-  faYoutube,
+  faStackOverflow
 } from "@fortawesome/free-brands-svg-icons";
 import LeafletMap from "../leaflet/LeafletMap";
 
@@ -22,9 +21,18 @@ export default function Footer({
             <img src={logoFooter} alt="img logo LoMotor footer" />
           </div>
           <div className="social-media-icons-container">
-            <FontAwesomeIcon className="social-media-icon" icon={faFacebook} />
-            <FontAwesomeIcon className="social-media-icon" icon={faInstagram} />
-            <FontAwesomeIcon className="social-media-icon" icon={faXTwitter} />
+            <a href="https://www.linkedin.com/in/mansour-lo-lo-5a7978292/">
+              <FontAwesomeIcon
+                className="social-media-icon"
+                icon={faLinkedin}
+              />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon className="social-media-icon" icon={faXTwitter} />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon className="social-media-icon" icon={faStackOverflow} />
+            </a>
             <a href="https://github.com/MansourLoLo/LOMOTOR_v2">
               <FontAwesomeIcon className="social-media-icon" icon={faGithub} />
             </a>
@@ -33,7 +41,9 @@ export default function Footer({
         <div className="find-us-container">
           <h2>Find us</h2>
           <div className="map-container-leaflet">
-            <LeafletMap coordinates={[19.234933189775774, -103.73096267069738]}/>
+            <LeafletMap
+              coordinates={[19.234933189775774, -103.73096267069738]}
+            />
           </div>
         </div>
         <div className="suscribe-container">
@@ -60,9 +70,27 @@ export default function Footer({
               <h4>@ Lomotor 2024. All rights reserved</h4>
             </div>
             <div className="policies">
-              <h4> <a href="https://www.brabus.com/en-int/GDPR.html"> Legal notice </a> </h4>
-              <h4> <a href="https://www.brabus.com/en-int/GDPR.html"> Privacy Policy </a> </h4>
-              <h4> <a href="https://www.brabus.com/en-int/GDPR.html"> Cookie Policy </a> </h4>
+              <h4>
+                {" "}
+                <a href="https://www.brabus.com/en-int/GDPR.html">
+                  {" "}
+                  Legal notice{" "}
+                </a>{" "}
+              </h4>
+              <h4>
+                {" "}
+                <a href="https://www.brabus.com/en-int/GDPR.html">
+                  {" "}
+                  Privacy Policy{" "}
+                </a>{" "}
+              </h4>
+              <h4>
+                {" "}
+                <a href="https://www.brabus.com/en-int/GDPR.html">
+                  {" "}
+                  Cookie Policy{" "}
+                </a>{" "}
+              </h4>
             </div>
           </div>
         </div>
