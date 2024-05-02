@@ -3,7 +3,7 @@ import "./ExploreAllCars.css";
 
 export default function ExploreAllCars() {
   return (
-    <section className="explore-section">
+    <section id="explore-section" className="explore-section">
       <div className="title-explore">
         <h1>Explore all cars</h1>
       </div>

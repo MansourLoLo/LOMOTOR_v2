@@ -22,3 +22,12 @@
     grid-area: 3/2 / 5/-1;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .grids-container{
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+}

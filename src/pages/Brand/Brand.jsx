@@ -10,13 +10,13 @@ export default function Brand() {
   return (
     <>
       <Header LogoHeader="/src/assets/svg/Logo_Lomotor_v2_letras_white.svg" />
-      <div className="container-video">
+      <div id="brand-video-container" className="container-video">
         <Carrusel posVideo={3} />
         <div className="video-title-container">
           <h1>WHO WE ARE</h1>
         </div>
       </div>
-      <section className="brand-container">
+      <section id="brand-container" className="brand-container">
         <div className="brand-white-container">
           <img src="/src/assets/svg/LogoLomotorv2_black.svg" alt="" />
         </div>

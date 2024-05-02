@@ -15,7 +15,7 @@ export default function VehicleContainer({title}) {
 
   return (
     <>
-      <div className="title">
+      <div id={title+"-component-container"} className="title">
         <p>{title}({vehicleList})</p>
       </div>
       <div className="vehicle-container">

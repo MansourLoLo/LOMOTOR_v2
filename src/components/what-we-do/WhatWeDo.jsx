@@ -14,7 +14,7 @@ export default function WhatWeDo(){
   }
   return(
     <>
-      <div className="grids-container">
+      <div id='what-we-do-container-grid' className="grids-container">
         {
           imageCollections.map((imagePath, index) => (
             <div key={index} className={`Whatgrid${index}`}>

@@ -18,20 +18,20 @@
   padding: 0;
 }
 .header {
-  background-color: transparent;
+  background: linear-gradient(#0d0d0dcc, transparent);
   width: 100vw;
   height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   z-index: 10;
-  position: absolute;
+  position: fixed;
 
   .menu-container {
     width: auto;
   }
-  .menu-container:active{
-    transform: scale(.8);
+  .menu-container:active {
+    transform: scale(0.8);
   }
   div {
     display: flex;
@@ -59,11 +59,11 @@
   color: white;
   cursor: pointer;
 }
-.icon-header:hover{
+.icon-header:hover {
   color: var(--primaryColor);
 }
-.icon-header:active{
-  transform: scale(.8);
+.icon-header:active {
+  transform: scale(0.8);
 }
 
 .menu-navbar {
@@ -71,7 +71,7 @@
   width: auto;
   height: 100%;
   position: fixed;
-  z-index: 20;
+  z-index: 50;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -90,8 +90,8 @@
       font-size: 1.8em;
       width: 50px;
     }
-    .icon-menu:active{
-      transform: scale(.8);
+    .icon-menu:active {
+      transform: scale(0.8);
     }
     img {
       width: 80%;
@@ -106,21 +106,51 @@
     flex-direction: column;
     justify-content: space-around;
 
-    .menu-link {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      p {
-        font-weight: 800;
-        font-size: 1.6em;
-        a{
+    details {
+      summary {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p a {
+          font-weight: 800;
+          font-size: 1.6em;
+          list-style: none;
           text-decoration: none;
           color: var(--defaultDark);
         }
+
+        .icon-navbar {
+          font-size: 1.4em;
+        }
+        .icon-navbar:active {
+          transform: rotate(90deg);
+        }
       }
-      .icon-navbar:active{
-        transform: rotate(90deg);
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .navBar-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5px;
+        gap: 5px;
+        a {
+          width: 100%;
+          text-align: start;
+          color: var(--secondaryBackgroundColor);
+          list-style: none;
+          text-decoration: none;
+          p {
+            font-size: clamp(10px, 2vh, 20px);
+            margin-left: 2px;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          }
+        }
       }
     }
   }
@@ -134,7 +164,7 @@
     .menu-contact {
       font-size: 1.5em;
       font-weight: 100;
-      a{
+      a {
         text-decoration: none;
         color: var(--defaultDark);
       }

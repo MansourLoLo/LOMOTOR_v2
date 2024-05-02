@@ -18,7 +18,7 @@ export default function Cars() {
         page="home"
         LogoHeader={"/src/assets/svg/Logo_Lomotor_v2_letras_white.svg"}
       />
-      <div className="img-background-container">
+      <div id="cars-index-container" className="img-background-container">
         <img
           src="/public/images/background-cars-page.jpg"
           alt="Img background"

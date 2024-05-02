@@ -4,7 +4,7 @@ import "./DiscoverBentoGrids.css";
 
 export default function DiscoverBentoGrids() {
   return (
-    <div className="discover-content">
+    <div id="discover-content" className="discover-content">
       <div className="title-container">
         <h1>Discover all cars</h1>
       </div>

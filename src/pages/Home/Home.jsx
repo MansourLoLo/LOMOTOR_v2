@@ -16,7 +16,7 @@ function Home() {
         LogoNavBar={"/src/assets/svg/Logo_Lomotor_v2_letras_black.svg"}
       />
 
-      <div className="container-video">
+      <div id="container-video" className="container-video">
        <Carrusel/>
       </div>
 

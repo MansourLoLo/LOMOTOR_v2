@@ -59,42 +59,98 @@ export default function Header({
           <img src={LogoNavBar} alt="Logo Header Words" />
         </div>
         <div className="menu-links-container">
-          <div className="menu-link home">
-            <p>
-              {" "}
-              <a href="/Home">Home</a>{" "}
-            </p>
-            <FontAwesomeIcon
-              className={cross ? "icon-navbar" : "icon-navbar plus"}
-              icon={faPlus}
-            />
-            <FontAwesomeIcon
-              className={cross ? "icon-navbar" : "icon-navbar chevronRight"}
-              icon={faChevronRight}
-            />
-          </div>
-          <div className="menu-link brand">
-            <p>
-              {" "}
-              <a href="/Brand">Brand</a>{" "}
-            </p>
-            <FontAwesomeIcon className="icon-navbar plus" icon={faPlus} />
-            <FontAwesomeIcon
-              className="icon-navbar chevronRight"
-              icon={faChevronRight}
-            />
-          </div>
-          <div className="menu-link cars">
-            <p>
-              {" "}
-              <a href="/Cars"> Cars </a>{" "}
-            </p>
-            <FontAwesomeIcon className="icon-navbar plus" icon={faPlus} />
-            <FontAwesomeIcon
-              className="icon-navbar chevronRight"
-              icon={faChevronRight}
-            />
-          </div>
+
+          <details className="menu-link">
+            <summary>
+              <p><a href="/Home">Home</a></p>
+              <FontAwesomeIcon
+                className={cross ? "icon-navbar" : "icon-navbar plus"}
+                icon={faPlus}
+              />
+              <FontAwesomeIcon
+                className={cross ? "icon-navbar" : "icon-navbar chevronRight"}
+                icon={faChevronRight}
+              />
+            </summary>
+            <hr />
+            <div className="navBar-links">
+              <a href="#container-video">
+                <p>Index</p>
+              </a>
+              <a href="#explore-section">
+                <p>Explore</p>
+              </a>
+              <a href="#discover-content">
+                <p>Discover</p>
+              </a>
+            </div>
+          </details>
+
+
+          <details className="menu-link">
+            <summary>
+              <p><a href="/Brand">Brand</a></p>
+              <FontAwesomeIcon
+                className={cross ? "icon-navbar" : "icon-navbar plus"}
+                icon={faPlus}
+              />
+              <FontAwesomeIcon
+                className={cross ? "icon-navbar" : "icon-navbar chevronRight"}
+                icon={faChevronRight}
+              />
+            </summary>
+            <hr />
+            <div className="navBar-links">
+              <a href="#brand-video-container">
+                <p>Index</p>
+              </a>
+              <a href="#brand-container">
+                <p>Brand</p>
+              </a>
+              <a href="#what-we-do-container-grid">
+                <p>What we do</p>
+              </a>
+            </div>
+          </details>
+
+
+          <details className="menu-link">
+            <summary>
+              <p><a href="/Cars">Cars</a></p>
+              <FontAwesomeIcon
+                className={cross ? "icon-navbar" : "icon-navbar plus"}
+                icon={faPlus}
+              />
+              <FontAwesomeIcon
+                className={cross ? "icon-navbar" : "icon-navbar chevronRight"}
+                icon={faChevronRight}
+              />
+            </summary>
+            <hr />
+            <div className="navBar-links">
+              <a href="#cars-index-container">
+                <p>Index</p>
+              </a>
+              <a href="#Cars-component-container">
+                <p>Cars</p>
+              </a>
+              <a href="#ECO-component-container">
+                <p>ECO</p>
+              </a>
+              <a href="#SUV-component-container">
+                <p>SUV</p>
+              </a>
+              <a href="#GPL-component-container">
+                <p>GPL</p>
+              </a>
+              <a href="#Comercial-component-container">
+                <p>Comercial</p>
+              </a>
+            </div>
+          </details>
+
+
+
         </div>
         <div className="menu-contact-container">
           <div className="menu-contact">

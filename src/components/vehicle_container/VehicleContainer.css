@@ -5,13 +5,13 @@
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
+  }   
   
 }
 .title{
   text-align: start;
   p{
-    font-size: 22px;
+    font-size: 22px;     
     font-weight: 600px;
   }
 }
