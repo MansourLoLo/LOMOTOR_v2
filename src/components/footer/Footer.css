@@ -1,27 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
 
-:root {
-  --primaryColor: #a48451;
-  --secondaryColor: #7d7d7e;
-  --thirdColor: #1d2222;
-
-  --primaryBackgroundColor: #2b2b2a;
-  --secondaryBackgroundColor: #404040;
-
-  --primaryFontColor: #f1f5f9;
-  --secondaryFontColor: #94a3b8;
-
-  --defaultWhite: #fff;
-  --defaultDark: #0d0d0d;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "PT Serif", serif;
-  font-weight: 700;
-  font-style: normal;
-}
 .line-footer {
   border: 2px solid #ffffff;
   margin: 0;
@@ -68,7 +45,7 @@
   }
 
   .find-us-container {
-    width: 50%;
+    width: 60%;
     justify-content: center;
     gap: 1em;
     color: var(--primaryBackgroundColor);
@@ -107,12 +84,20 @@
       justify-content: start;
       gap: 1em;
 
+      .input,
+      .suscribe-btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+      }
+
       .input {
-        height: 50px;
-        font-weight: 800;
+        height: 40px;
+        font-weight: 700;
         font-size: 1em;
         color: var(--primaryFontColor);
         background-color: var(--secondaryColor);
+        border-radius: 10px;
       }
       .suscribe-btn {
         display: flex;
@@ -120,46 +105,9 @@
         align-items: start;
         width: 100%;
         height: 40px;
-
-        .btn {
-          width: 40%;
-          max-width: 400px;
-          height: 60px;
-          position: relative;
-          border: 2px solid var(--primaryColor);
-          color: var(--primaryFontColor);
-          background-color: var(--primaryColor);
-          font-size: 20px;
-          cursor: pointer;
-          border-radius: 30px;
-          transition: 0.3s;
-          overflow: hidden;
+        button{
+          border-radius: 10px;
         }
-        .btn::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: var(--primaryColor);
-          z-index: -1;
-        }
-        .btn:hover {
-          background-color: transparent;
-          color: var(--primaryColor);
-        }
-        .btn:active {
-          transform: scale(0.8);
-          color: var(--primaryFontColor);
-        }
-      }
-      .input,
-      .suscribe-btn-container {
-        width: 100%;
-        display: flex;
-        justify-content: start;
-        background-color: var(--primaryColor);
       }
     }
   }
@@ -251,8 +199,11 @@
 @media only screen and (min-width: 1200px) {
   .footer{
     .find-us-container{
-      width: calc(50% - 600px);
+      width: 60%;
       min-width: 300px;
+      .map-container-leaflet{
+        width: 100%;
+      }
     }
   }
 }

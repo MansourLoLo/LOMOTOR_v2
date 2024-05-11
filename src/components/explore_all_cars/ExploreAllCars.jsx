@@ -1,5 +1,6 @@
-import Card from "../card/Card";
+import Card from "../cards/Card_1/Card1";
 import "./ExploreAllCars.css";
+import Button1 from "../buttons/button_1/Button1"
 
 export default function ExploreAllCars() {
   return (
@@ -34,7 +35,7 @@ export default function ExploreAllCars() {
         <hr />
         <div className="btn-explore">
           <a href="/Cars">
-          <h3>Explore all cars</h3>
+          <Button1 text={"Explore all cars"} />
           </a>
         </div>
       </div>

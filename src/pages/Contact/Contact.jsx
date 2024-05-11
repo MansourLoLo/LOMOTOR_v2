@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 import Header from "../../components/header/Header";
 import Footer from '../../components/footer/Footer'
+import Button1 from "../../components/buttons/button_1/Button1";
 
 export default function Contact() {
   return (
@@ -77,8 +78,8 @@ export default function Contact() {
               ></textarea>
             </div>
           </div>
-          <div className="btn">
-            <button type="button"> Contact Us </button>
+          <div className="btn-contact-us-container">
+            <Button1 text={"Contact Us"} />
           </div>
         </div>
       </section>

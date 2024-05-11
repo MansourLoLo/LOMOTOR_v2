@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Carrusel.css";
 import videos from "../../services/video/brabus-cars/BrabusCars";
 
-function Carrusel() {
+function Carrusel({ lateralControl = true, dotsControl = true }) {
   const listRef = useRef();
 
   const [actualVideo, setactualVideo] = useState(0);
@@ -38,13 +38,29 @@ function Carrusel() {
     setactualVideo(videoIndex);
   };
 
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     if (actualVideo == videos.length) {
+  //       goToVideo(0);
+  //     }
+      
+  //     scrollToVideo("next");
+  //   }, 15000);
+  // }, [actualVideo]);
+
   return (
     <div className="main-container">
       <div className="carrusel-container">
-        <div className="leftArrow" onClick={() => scrollToVideo("prev")}>
+        <div
+          className={lateralControl ? "leftArrow" : "lateralControlHidden"}
+          onClick={() => scrollToVideo("prev")}
+        >
           &#10092;
         </div>
-        <div className="rightArrow" onClick={() => scrollToVideo("next")}>
+        <div
+          className={lateralControl ? "rightArrow" : "lateralControlHidden"}
+          onClick={() => scrollToVideo("next")}
+        >
           &#10093;
         </div>
         <div className="container-videos">
@@ -67,7 +83,7 @@ function Carrusel() {
             })}
           </ul>
         </div>
-        <div className="control-container">
+        <div className={dotsControl ? "control-container" : ""}>
           {videos.map((_, index) => (
             <div
               key={index}

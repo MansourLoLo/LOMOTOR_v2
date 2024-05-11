@@ -1,0 +1,86 @@
+.card2-container {
+  width: 350px;
+  height: 400px;
+  background-color: var(--cardBackgroundColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+
+  .img-card-container {
+    width: 100%;
+    height: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      margin-bottom: 2em;
+      object-fit: cover;
+    }
+  }
+  .text-card2-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 80%;
+
+    div{
+      text-align: start;
+    }
+    .title-card h1{
+      color: var(--defaultDark);
+    }
+    .subtext-card{
+      color: var(--primaryColor);
+    }
+  }
+  .card-price-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: auto;
+    margin-bottom: 1em;
+
+    .reviews{
+      margin-top: auto;
+      margin-bottom: 10px;
+      width: 80%;
+      height: 1em;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      color: var(--primaryColor);
+      svg{
+        width: 1em;
+        margin-right: 5px;
+        fill: var(--primaryColor);
+      }
+    }
+
+    .btn-card{
+      align-self: flex-end;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn-container{
+        width: 100px;
+        height: 50%;
+      }
+      .details-container{
+        color: var(--secondaryColor);
+      }
+    }
+  }
+}

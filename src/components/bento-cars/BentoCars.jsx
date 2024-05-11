@@ -49,9 +49,6 @@ export default function BentoCars() {
 
         selectedNumbers.map((i, index) => (
           <div key={index} className={`bento${randomGrids}_${index+1}`}>
-            {console.log("Selected numbers recorrido")}
-            {console.log("Indice:" + index)}
-            {console.log("Objeto:" + i)}
             <img src={images[i].src} alt={images[i].title} />
           </div>
         ))

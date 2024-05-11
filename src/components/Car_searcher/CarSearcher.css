@@ -1,0 +1,89 @@
+.searcher-filters-container {
+  background-color: var(--defaultWhite);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+
+  div {
+    width: 80%;
+  }
+
+  .searcher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+
+    .label-search-container {
+      width: 100%;
+      text-align: start;
+      font-size: 1.2em;
+      color: var(--secondaryFontColor);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      svg {
+        display: none;
+      }
+    }
+    .input-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 3px;
+      border: 2px solid var(--secondaryFontColor);
+      height: 50px;
+      border-radius: 10px;
+
+      input {
+        width: 80%;
+        height: 100%;
+        border: 0;
+        font-size: 1.2em;
+      }
+    }
+  }
+  .filters-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+.hidden {
+  margin-left: -300px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .searcher-filters-container {
+    .searcher {
+      .label-search-container {
+        .showSearcher {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

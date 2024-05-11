@@ -24,6 +24,7 @@ export default function Header({
     setMenu(true);
     showCross((page = "Home" ? false : true));
   };
+  
   const handleClickNavbar = () => {
     setMenu(false);
   };
@@ -74,13 +75,13 @@ export default function Header({
             </summary>
             <hr />
             <div className="navBar-links">
-              <a href="#container-video">
+              <a onClick={() => setMenu(false)} href="#Index-home">
                 <p>Index</p>
               </a>
-              <a href="#explore-section">
+              <a onClick={() => setMenu(false)} href="#explore-section">
                 <p>Explore</p>
               </a>
-              <a href="#discover-content">
+              <a onClick={() => setMenu(false)} href="#discover-content">
                 <p>Discover</p>
               </a>
             </div>
@@ -101,13 +102,10 @@ export default function Header({
             </summary>
             <hr />
             <div className="navBar-links">
-              <a href="#brand-video-container">
+              <a onClick={() => setMenu(false)} href="#brand-video-container">
                 <p>Index</p>
               </a>
-              <a href="#brand-container">
-                <p>Brand</p>
-              </a>
-              <a href="#what-we-do-container-grid">
+              <a onClick={() => setMenu(false)} href="#Brand-container">
                 <p>What we do</p>
               </a>
             </div>
@@ -128,22 +126,22 @@ export default function Header({
             </summary>
             <hr />
             <div className="navBar-links">
-              <a href="#cars-index-container">
+              <a onClick={() => setMenu(false)} href="#cars-index-container">
                 <p>Index</p>
               </a>
-              <a href="#Cars-component-container">
+              <a onClick={() => setMenu(false)} href="#Cars-component-container">
                 <p>Cars</p>
               </a>
-              <a href="#ECO-component-container">
+              <a onClick={() => setMenu(false)} href="#ECO-component-container">
                 <p>ECO</p>
               </a>
-              <a href="#SUV-component-container">
+              <a onClick={() => setMenu(false)} href="#SUV-component-container">
                 <p>SUV</p>
               </a>
-              <a href="#GPL-component-container">
+              <a onClick={() => setMenu(false)} href="#GPL-component-container">
                 <p>GPL</p>
               </a>
-              <a href="#Comercial-component-container">
+              <a onClick={() => setMenu(false)} href="#Comercial-component-container">
                 <p>Comercial</p>
               </a>
             </div>

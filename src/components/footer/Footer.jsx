@@ -1,11 +1,12 @@
-import React from "react";
 import "./Footer.css";
+import React from "react";
+import Button1 from "../buttons/button_1/Button1";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
   faXTwitter,
-  faStackOverflow
+  faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 import LeafletMap from "../leaflet/LeafletMap";
 
@@ -18,7 +19,9 @@ export default function Footer({
       <footer className="footer">
         <div className="social-media-container">
           <div className="logo-footer-container">
-            <img src={logoFooter} alt="img logo LoMotor footer" />
+            <a href="/Home">
+              <img src={logoFooter} alt="img logo LoMotor footer" />
+            </a>
           </div>
           <div className="social-media-icons-container">
             <a href="https://www.linkedin.com/in/mansour-lo-lo-5a7978292/">
@@ -27,11 +30,17 @@ export default function Footer({
                 icon={faLinkedin}
               />
             </a>
-            <a href="#">
-              <FontAwesomeIcon className="social-media-icon" icon={faXTwitter} />
+            <a href="https://twitter.com/">
+              <FontAwesomeIcon
+                className="social-media-icon"
+                icon={faXTwitter}
+              />
             </a>
-            <a href="#">
-              <FontAwesomeIcon className="social-media-icon" icon={faStackOverflow} />
+            <a href="https://stackoverflow.com/">
+              <FontAwesomeIcon
+                className="social-media-icon"
+                icon={faStackOverflow}
+              />
             </a>
             <a href="https://github.com/MansourLoLo/LOMOTOR_v2">
               <FontAwesomeIcon className="social-media-icon" icon={faGithub} />
@@ -48,7 +57,7 @@ export default function Footer({
         </div>
         <div className="suscribe-container">
           <div className="suscribe-title">
-            <p> Suscribe to get the latest news</p>
+            <p> Suscribe to the latest news</p>
           </div>
           <div className="suscribe-input-container">
             <input
@@ -57,7 +66,7 @@ export default function Footer({
               placeholder="someone@example.com"
             />
             <div className="suscribe-btn">
-              <button className="btn">Suscribe</button>
+              <Button1 text={"Suscribe"} />
             </div>
           </div>
         </div>
@@ -95,7 +104,9 @@ export default function Footer({
           </div>
         </div>
         <div className="logo">
-          <img src={logoFooterCredits} alt="Logo Credit" />
+          <a href="/Home">
+            <img src={logoFooterCredits} alt="Logo Credit" />
+          </a>
         </div>
       </div>
     </>

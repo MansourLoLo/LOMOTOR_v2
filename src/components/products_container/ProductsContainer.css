@@ -1,0 +1,25 @@
+.product-container{
+  margin: 2em 0;
+  width: 100%;
+
+  .title-product-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 1em;
+
+    p {
+      font-size: clamp(16px, 5vw, 22px);
+      font-weight: 800px;
+    }
+  }
+  .products-card-container {
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+}

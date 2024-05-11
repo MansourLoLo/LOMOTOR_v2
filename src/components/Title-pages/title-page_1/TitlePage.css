@@ -1,0 +1,19 @@
+.Brand-title-container{
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 1em;
+  text-align: center;
+  h4{
+    color: var(--primaryColor);
+  }
+  h1{
+    color: var(--defaultDark);
+  }
+  p{
+    color: var(--primaryBackgroundColor);
+  }
+}

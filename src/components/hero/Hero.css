@@ -1,0 +1,222 @@
+body, html{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  min-height: 100dvh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .hero-content {
+    max-width: 500px;
+    width: 40%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    gap: 3em;
+    z-index: 20;
+    
+    .preTitle{
+      color:  var(--primaryColor);
+    }
+
+    .hero-title {
+      word-wrap: break-word;
+      word-break: break-all;
+
+      h1 {
+        font-weight: 900;
+        font-size: clamp(26px, 5vw, 45px);
+      }
+
+      span {
+        color: var(--primaryColor);
+      }
+    }
+    .hero-subtitle {
+      color: var(--secondaryBackgroundColor);
+    }
+    .hero-btn {
+      width: 40%;
+      min-width: 150px;
+      display: flex;
+      justify-content: start;
+      margin-bottom: 1em;
+      border: 1px solid var(--defaultWhite);
+    }
+  }
+  .hero-img-container {
+    width: 55%;
+    min-width: 300px;
+
+    .img-container {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .background-img {
+      width: 50%;
+      height: 100%;
+      margin-right: -200px;
+      position: absolute;
+      background-color: var(--primaryColor);
+      top: 0;
+      right: 0;
+      z-index: -1;
+      clip-path: polygon(34% 0, 100% 0, 100% 100%, 38% 100%, 0 35%);
+      overflow: hidden;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hero-section{
+    .hero-content {
+      margin-top: 2em;
+      flex-direction: column;
+      width: 80%;
+      gap: 1em;
+    }
+    .hero-img-container{
+      width: 100%;
+      height: 50dvh;
+      z-index: 10;
+      .img-container{
+        height: 100%;
+        img{
+          object-fit: cover;
+          object-position: 15%;
+        }
+      }
+      .background-img{
+        width: 100%;
+        margin-left: -100px;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .hero-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .hero-content {
+      margin-top: 2em;
+      flex-direction: column;
+      width: 100%;
+      gap: 1em;
+    }
+    .hero-img-container{
+      width: 100%;
+      height: 50dvh;
+      z-index: 10;
+      .img-container{
+        height: 100%;
+        img{
+          object-fit: cover;
+          object-position: 15%;
+        }
+      }
+      .background-img{
+        width: 100%;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .hero-content-container {
+    flex-direction: row;
+  }
+  .hero-img-container .img-container img{
+    object-fit: cover;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .hero-section{
+    flex-direction: row;
+    justify-content: space-around;
+    .hero-content {
+      margin-top: 2em;
+      flex-direction: column;
+      width: 40%;
+      gap: 1em;
+    }
+    
+    .hero-img-container{
+      width: 70%;
+      height: 60%;
+      z-index: 10;
+      margin-right: -300px;
+      .img-container{
+        height: 100%;
+        width: 100%;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: 15%;
+        }
+      }
+      .background-img{
+        width: 50%;
+        margin-left: -100px;
+        top: 0;
+        right: 0;
+      }
+    }
+    .reversed-img-container{
+      width: 70%;
+      height: 60%;
+      z-index: 10;
+      margin-left: -300px;
+
+      .img-container{
+        transform: rotateY(180deg);
+      }
+    }
+    .img-container{
+      height: 100%;
+      width: 100%;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .background-img{
+      width: 50%;
+      margin-left: -100px;
+      top: 0;
+      right: 0;
+      filter: brightness(100%);
+    }
+
+  }
+}
