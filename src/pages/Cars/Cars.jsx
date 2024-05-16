@@ -6,6 +6,7 @@ import Card from "../../components/cards/Card_3/Card3";
 import Footer from "../../components/footer/Footer";
 import CarSeacher from "../../components/Car_searcher/CarSeacher";
 import TitlePage from "../../components/Title-pages/title-page_1/TitlePage";
+import CarsList from "../../components/car-list/CarsList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -17,6 +18,22 @@ export default function Cars() {
   };
 
   const [showSearcher, SetshowSearcher] = useState(false);
+
+  const carModels = CarsList();
+
+  console.log(carModels);
+
+  const calculePrice = (fuel_consumption) =>{
+    
+    const basicPrice = fuel_consumption > 18 ? 70 : 40
+    const gas = 1.46
+
+    let mileageCity = fuel_consumption * gas
+
+    let lastPrice = (basicPrice + mileageCity).toFixed(2)
+
+    return lastPrice
+  }
 
   return (
     <div className="Cars-page-container">
@@ -57,35 +74,23 @@ export default function Cars() {
           <CarSeacher />
         </div>
         <div className="cars-searcher-container">
-          <Card
-            text1={"Nissan GTR R34"}
-            img={"/public/images/Cars-img/SUV/creta.png"}
-            price={"99.00"}
-            btnText={"Rent"}
-          />
-          <Card
-            text1={"Nissan GTR R34"}
-            img={"/public/images/Cars-img/SUV/creta.png"}
-            price={"99.00"}
-            btnText={"Rent"}
-          />
-          <Card
-            text1={"Nissan GTR R34"}
-            img={"/public/images/Cars-img/SUV/creta.png"}
-            price={"99.00"}
-            btnText={"Rent"}
-          />
-          <Card
-            text1={"Nissan GTR R34"}
-            img={"/public/images/Cars-img/SUV/creta.png"}
-            price={"99.00"}
-            btnText={"Rent"}
-          />
+          {carModels.map((car) => {
+            return (
+              <Card
+                text1={`${car.make} ${car.model}`}
+                img={car.img}
+                price={calculePrice(car.fuel_consumption)}
+                btnText={"Rent"}
+                gas={car.fuel_consumption}
+                transmission={car.transmission === 'a' ? "automatic" : "manual"}
+                people={car.people}
+              />
+            );
+          })}
         </div>
       </section>
 
       <Footer />
-      
     </div>
   );
 }

@@ -4,7 +4,6 @@ Lomotor is inspired by Brabus meticulousness and commitment to excellence, but f
 
 ![Img page](/public/images/page.png)
 
-
 ### 🔩 Built With
 
 * [![React][React.js]][React-url]
@@ -159,6 +158,44 @@ The design and functionality of this portfolio have been influenced and inspired
 
     Page Videos: Use of videos for the webpage.
 
+
+## Source images:
+
+
+BBS.com
+
+	Wheels images for products 
+
+Bilstein.com
+
+	Suspension images for products 
+
+Seibon Carbon
+
+	Body_Enhancements for products
+
+Brembo
+
+	Brakes upgrades for products
+
+OS Giken
+
+	Drivetrain upgrades for products
+
+MagnaFlow, Flowmaster
+
+	Exhaust upgrades for products
+
+Sparco,
+
+	Interior upgrades for products
+
+Google
+
+	Performance accesories for products
+
+
+
 ---
 
 ## ⚙️ Technologies Used
@@ -193,3 +230,14 @@ Interactive JavaScript Maps
 For inquiries or collaboration opportunities, feel free to reach out via email at mansour.lolo.06@gmail.com or through LinkedIn.
 
 By Mansour Lo Lo 
+
+
+Por hacer
+
+- rss
+- crud con array json
+- model
+- documentacion
+- animaciones
+- explore all cars
+

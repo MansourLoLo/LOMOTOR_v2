@@ -10,12 +10,13 @@
   .img-card-container {
     width: 100%;
     height: 50%;
+    margin-top: 5px;
     img {
       width: 100%;
       height: 100%;
       border-radius: 10px;
       margin-bottom: 2em;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
   .text-card2-container {

@@ -76,7 +76,7 @@ export default function Footer({
           <hr />
           <div className="policies-container">
             <div className="rights">
-              <h4>@ Lomotor 2024. All rights reserved</h4>
+              <h4>Lomotor 2024. All rights reserved  &copy;</h4>
             </div>
             <div className="policies">
               <h4>

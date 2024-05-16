@@ -32,19 +32,25 @@ export default function CarSeacher() {
       </div>
       <div className="filters-content-container">
         <SearchFilter
-          title={"Tyre"}
-          filter1={["Sport", 12]}
-          filter2={["SUV", 12]}
-          filter3={["MPV", 12]}
-          filter4={["Sedan", 12]}
+          title={"Driving"}
+          filter1={["Manual", 8]}
+          filter2={["Automatic", 4]}
+          filter3={["Double clutch", 0]}
+          filter4={["CVT", 0]}
         />
-
         <SearchFilter
           title={"Capacity"}
-          filter1={["Sport", 12]}
-          filter2={["SUV", 12]}
-          filter3={["MPV", 12]}
-          filter4={["Sedan", 12]}
+          filter1={["10 - 15 L", 3]}
+          filter2={["15 - 20 L", 5]}
+          filter3={["20 - 25 L", 2]}
+          filter4={["25 - 30 L", 4]}
+        />
+        <SearchFilter
+          title={"People"}
+          filter1={["2 People", 3]}
+          filter2={["4 People", 5]}
+          filter3={["5 People", 2]}
+          filter4={["6 People", 0]}
         />
       </div>
     </div>

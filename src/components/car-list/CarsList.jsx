@@ -1,42 +1,43 @@
 import React, { useEffect, useState } from "react";
 import CarService from "../../services/firebase/cars-service.js";
+import { Database } from "firebase/database";
 
 export default function CarsList() {
   const [cars, setCars] = useState([]);
 
-  const getAllCars = () =>{
-    CarService.getAllCars().then((items) => {
-      let auxCars = []
+  useEffect(() => {
+    const getAllCars = () => {
+      CarService.getAllCars().then((items) => {
+        let auxCars = [];
+        console.log(items);
 
-      items.forEach((i) => {
-        const key = i.key
-        const data = i.val()
+        items.forEach((i) => {
+          const key = i.key;
+          const data = i.val();
+          console.log(key, data);
 
-        const auxCar = {
-          key: key,
-          brand: data.brand,
-          model: data.mode
-        }
+          let auxCar = null;
 
-        auxCars.push(auxCar)
-      })
-      setCars([...auxCars])
-    })
+          data.map((model) => {
+            auxCar = {
+              make: model.Make,
+              model: model.Model,
+              fuel_consumption: model.fuel_consumption,
+              img: model.img,
+              people: model.people,
+              transmission: model.transmission
+            };
+            auxCars.push(auxCar);
+          });
+          
+          console.log(auxCars)
+        });
+        setCars([...auxCars]);
+      });
+    };
 
-    console.log("Datos obtenidos")
-  }
+    getAllCars();
+  }, []);
 
-  useEffect(()=>{
-    getAllCars()
-  }, [])
-
-  return (
-    <>
-      {cars.map((c) => (
-        <p key={c.key}>
-          {c.brand} {c.model}
-        </p>
-      ))}
-    </>
-  );
+  return cars;
 }

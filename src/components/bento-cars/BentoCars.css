@@ -6,6 +6,8 @@ body{
   display: grid;
   grid-gap: 40px;
   grid-auto-rows: minmax(100px, auto);
+  overflow-y: auto;
+  overflow-x: scroll;
 }
 
 .bento1{

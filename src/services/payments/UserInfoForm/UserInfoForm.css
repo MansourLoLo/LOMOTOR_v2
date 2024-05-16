@@ -1,0 +1,74 @@
+.User-info-form-container{
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .img-user-info-container{
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+      width: 90%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+  }
+  .info-car-payments-content{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    div{
+      width: 80%;
+    }
+    
+    .user-info-car-title{
+      font-size: 1rem;
+      display: flex;
+      justify-content: start;
+      h2{
+        width: 100%;
+        text-align: start;
+        color: var(--primaryColor);
+      }
+    }
+    .info-car{
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 	2em;
+
+      .payments{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        .icon-payments{
+          margin-right: 4px;
+          color: var(--primaryColor);
+        }
+        .info-car-details{
+          display: flex;
+          justify-content: space-between;
+          p{
+            font-size: 1.2rem;
+            color: var(--secondaryFontColor);
+          }
+        } 
+      }
+    }
+    .btn-payments-container{
+      width: 80%;
+    }
+  }
+}

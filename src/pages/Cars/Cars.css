@@ -33,10 +33,12 @@
 
   .filters-cars-content-container{
     height: 100%;
+    min-width: 260px;
+    flex: 1;
   }
 
   .cars-searcher-container {
-    width: 90%;
+    flex: 5;
     display: flex;
     align-items: center;
     justify-content: start;

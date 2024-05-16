@@ -1,5 +1,6 @@
 import "./Card2.css";
 import Button1 from "../../buttons/button_1/Button1";
+import { useState } from "react";
 
 export default function Card({
   img,
@@ -8,7 +9,34 @@ export default function Card({
   text3,
   btnText,
   detailsText,
+  stars,
 }) {
+  const starsCount = () => {
+    let starArray = [];
+    let limitStars = 0;
+
+    if (stars > 5) {
+      limitStars = 5;
+    } else {
+      limitStars = stars;
+    }
+
+    for (let i = 0; i < limitStars; i++) {
+      starArray.push(
+        <svg
+          key={i}
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100"
+          viewBox="0 0 24 24"
+        >
+          <path d="M12 0l3.09 8.72 8.28.06c.23.01.32.31.15.46l-6.3 5.3 2.34 8.09c.08.28-.23.52-.46.36l-7.3-4.72-7.3 4.72c-.23.15-.54-.08-.46-.36l2.34-8.09-6.3-5.3c-.18-.15-.08-.45.15-.46l8.28-.06 3.09-8.72z" />
+        </svg>
+      );
+    }
+    return starArray;
+  };
+
   return (
     <>
       <div className="card2-container">
@@ -26,14 +54,8 @@ export default function Card({
         </div>
         <div className="card-price-container">
           <div className="reviews">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="100"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 0l3.09 8.72 8.28.06c.23.01.32.31.15.46l-6.3 5.3 2.34 8.09c.08.28-.23.52-.46.36l-7.3-4.72-7.3 4.72c-.23.15-.54-.08-.46-.36l2.34-8.09-6.3-5.3c-.18-.15-.08-.45.15-.46l8.28-.06 3.09-8.72z" />
-            </svg>
+            {starsCount()}
+
             <h5>{text3}</h5>
           </div>
           <div className="btn-card">

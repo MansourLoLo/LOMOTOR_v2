@@ -49,7 +49,7 @@ function Carrusel({ lateralControl = true, dotsControl = true }) {
   // }, [actualVideo]);
 
   return (
-    <div className="main-container">
+    <div className="main-video-container">
       <div className="carrusel-container">
         <div
           className={lateralControl ? "leftArrow" : "lateralControlHidden"}
@@ -63,7 +63,7 @@ function Carrusel({ lateralControl = true, dotsControl = true }) {
         >
           &#10093;
         </div>
-        <div className="container-videos">
+        <div className="container-videos-list">
           <ul ref={listRef}>
             {videos.map((item) => {
               return (

@@ -1,346 +1,520 @@
 const products = [
   {
-    "Exhaust system upgrades": [
+    category: "Wheels_and_tyres",
+    products: [
       {
-        "title": "Performance exhaust system",
-        "name": "Borla S-Type Cat-Back",
-        "price": 120.99,
-        "reviews": 8,
-        "stars": 3
+        name: "Velocity Vortex",
+        price: 120.99,
+        reviews: 8,
+        stars: 3,
+        img: "velocity_vortex.png",
       },
       {
-        "title": "Cat-back exhaust system",
-        "name": "MagnaFlow Performance",
-        "price": 234.99,
-        "reviews": 17,
-        "stars": 4
+        name: "TurboTech Titan",
+        price: 134.99,
+        reviews: 12,
+        stars: 2,
+        img: "turbotech_titan.png",
       },
       {
-        "title": "Axle-back exhaust system",
-        "name": "Flowmaster American Thunder",
-        "price": 56.99,
-        "reviews": 26,
-        "stars": 1
+        name: "Apex Alloy",
+        price: 99.99,
+        reviews: 5,
+        stars: 4,
+        img: "apex_alloy.png",
       },
       {
-        "title": "Headers",
-        "name": "BBK Performance Full-Length Headers",
-        "price": 87.99,
-        "reviews": 2,
-        "stars": 4
+        name: "Infinity Forge",
+        price: 155.99,
+        reviews: 10,
+        stars: 1,
+        img: "infinity_forge.png",
       },
       {
-        "title": "Muffler delete",
-        "name": "Straight pipe with custom resonator",
-        "price": 102.99,
-        "reviews": 43,
-        "stars": 3
-      }
-    ]
+        name: "Phoenix Blade",
+        price: 109.99,
+        reviews: 7,
+        stars: 3,
+        img: "phoenix_blade.png",
+      },
+      {
+        name: "StealthX Shadow",
+        price: 179.99,
+        reviews: 15,
+        stars: 5,
+        img: "stealthx_shadow.png",
+      },
+      {
+        name: "Nova Fusion",
+        price: 129.99,
+        reviews: 9,
+        stars: 3,
+        img: "nova_fusion.png",
+      },
+      {
+        name: "Titanica Thrust",
+        price: 145.99,
+        reviews: 11,
+        stars: 2,
+        img: "titanica_thrust.png",
+      },
+      {
+        name: "HyperDrive Havoc",
+        price: 103.84,
+        reviews: 18,
+        stars: 5,
+        img: "hyperdrive_havoc.png",
+      },
+    ],
   },
   {
-    "Intake upgrades": [
+    category: "Suspension_upgrades",
+    products: [
       {
-        "title": "Cold air intake",
-        "name": "K&N Cold Air Intake Kit",
-        "price": 199.99,
-        "reviews": 12,
-        "stars": 4
+        name: "AirLift ProSeries",
+        price: 499.99,
+        reviews: 20,
+        stars: 1,
+        img: "airlift_proseries.png",
       },
       {
-        "title": "Short ram intake",
-        "name": "AEM Short Ram Air Intake System",
-        "price": 149.99,
-        "reviews": 6,
-        "stars": 3
+        name: "Eibach Pro-Kit",
+        price: 85.78,
+        reviews: 15,
+        stars: 5,
+        img: "eibach_prokit.png",
       },
       {
-        "title": "Intake manifold",
-        "name": "Skunk2 Racing Intake Manifold",
-        "price": 299.99,
-        "reviews": 4,
-        "stars": 5
-      }
-    ]
+        name: "KW Variant 3",
+        price: 899.99,
+        reviews: 25,
+        stars: 5,
+        img: "kw_variant3.png",
+      },
+      {
+        name: "Bilstein B8 Performance Plus",
+        price: 349.99,
+        reviews: 18,
+        stars: 2,
+        img: "bilstein_b8.png",
+      },
+      {
+        name: "H&R Sport Springs",
+        price: 131.87,
+        reviews: 12,
+        stars: 1,
+        img: "hr_sport_springs.png",
+      },
+      {
+        name: "Tein Flex Z",
+        price: 699.99,
+        reviews: 22,
+        stars: 3,
+        img: "tein_flexz.png",
+      },
+      {
+        name: "ST XTA Coilovers",
+        price: 799.99,
+        reviews: 18,
+        stars: 5,
+        img: "st_xta_coilovers.png",
+      },
+    ],
   },
   {
-    "Engine tuning": [
+    category: "Performance_accessories",
+    products: [
       {
-        "title": "Performance chip/tuner",
-        "name": "DiabloSport Trinity T2 EX",
-        "price": 349.99,
-        "reviews": 10,
-        "stars": 4
+        name: "Cold Air Intercooler Kit",
+        price: 199.99,
+        reviews: 15,
+        stars: 3,
+        img: "cold_air_intercooler.png",
       },
       {
-        "title": "ECU remapping",
-        "name": "Hondata FlashPro",
-        "price": 499.99,
-        "reviews": 8,
-        "stars": 4
+        name: "Performance turbo",
+        price: 399.99,
+        reviews: 20,
+        stars: 1,
+        img: "performance_turbo.png",
       },
       {
-        "title": "Boost controller",
-        "name": "Grimmspeed Manual Boost Controller",
-        "price": 99.99,
-        "reviews": 5,
-        "stars": 4
-      }
-    ]
+        name: "Turbocharger Upgrade",
+        price: 999.99,
+        reviews: 30,
+        stars: 5,
+        img: "turbocharger_upgrade.png",
+      },
+      {
+        name: "Nitrous Oxide kit",
+        price: 212.86,
+        reviews: 10,
+        stars: 3,
+        img: "nitrous_oxide_kit.png",
+      },
+      {
+        name: "High-Flow Fuel Injectors",
+        price: 173.32,
+        reviews: 8,
+        stars: 3,
+        img: "high_flow_injectors.png",
+      },
+      {
+        name: "Short Throw Shifter",
+        price: 129.99,
+        reviews: 12,
+        stars: 1,
+        img: "short_throw_shifter.png",
+      },
+    ],
   },
   {
-    "Suspension upgrades": [
+    category: "Interior_upgrades",
+    products: [
       {
-        "title": "Coilover suspension",
-        "name": "KW Variant 3 Coilover Kit",
-        "price": 1899.99,
-        "reviews": 3,
-        "stars": 5
+        name: "Sport Steering Wheel",
+        price: 249.99,
+        reviews: 10,
+        stars: 3,
+        img: "sport_steering_wheel.png",
       },
       {
-        "title": "Lowering springs",
-        "name": "Eibach Pro-Kit Lowering Springs",
-        "price": 249.99,
-        "reviews": 7,
-        "stars": 4
+        name: "Racing Steering Wheel",
+        price: 349.99,
+        reviews: 15,
+        stars: 5,
+        img: "racing_steering_wheel.png",
       },
       {
-        "title": "Sway bars",
-        "name": "Whiteline Adjustable Sway Bar Kit",
-        "price": 299.99,
-        "reviews": 5,
-        "stars": 4
+        name: "Bucket Racing Seats",
+        price: 599.99,
+        reviews: 20,
+        stars: 4,
+        img: "bucket_racing_seats.png",
       },
       {
-        "title": "Strut tower brace",
-        "name": "Cusco Front Strut Tower Brace",
-        "price": 149.99,
-        "reviews": 6,
-        "stars": 4
-      }
-    ]
+        name: "Sport Bucket Seats",
+        price: 499.99,
+        reviews: 18,
+        stars: 5,
+        img: "sport_bucket_seats.png",
+      },
+      {
+        name: "Recaro Racing Seats",
+        price: 799.99,
+        reviews: 25,
+        stars: 5,
+        img: "recaro_racing_seats.png",
+      },
+      {
+        name: "Aluminum Racing Pedals",
+        price: 79.99,
+        reviews: 8,
+        stars: 1,
+        img: "aluminum_racing_pedal.png",
+      },
+      {
+        name: "Protective Grille",
+        price: 395.75,
+        reviews: 12,
+        stars: 4,
+        img: "protective_grille.png",
+      },
+      {
+        name: "Harness Bar",
+        price: 184.84,
+        reviews: 18,
+        stars: 1,
+        img: "harness_bar.png",
+      },
+    ],
   },
   {
-    "Brake upgrades": [
+    category: "Exhaust_system_upgrades",
+    products: [
       {
-        "title": "Performance brake pads",
-        "name": "Hawk Performance Ceramic Brake Pads",
-        "price": 109.99,
-        "reviews": 9,
-        "stars": 4
+        name: "High-Flow Catalytic Converter (Steel)",
+        price: 249.99,
+        reviews: 10,
+        stars: 3,
+        img: "high_flow_catalytic_steel.png",
       },
       {
-        "title": "Upgraded brake rotors",
-        "name": "StopTech Slotted Brake Rotors",
-        "price": 159.99,
-        "reviews": 6,
-        "stars": 4
+        name: "High-Flow Catalytic Converter (Titanium)",
+        price: 499.99,
+        reviews: 15,
+        stars: 5,
+        img: "high_flow_catalytic_titanium.png",
       },
       {
-        "title": "Stainless steel brake lines",
-        "name": "Goodridge G-Stop Stainless Steel Brake Line Kit",
-        "price": 119.99,
-        "reviews": 5,
-        "stars": 4
-      }
-    ]
+        name: "Performance Stainless Steel Exhaust Pipe",
+        price: 91.43,
+        reviews: 12,
+        stars: 4,
+        img: "performance_exhaust_pipe.png",
+      },
+      {
+        name: "Carbon Fiber Exhaust Tip (Round)",
+        price: 99.99,
+        reviews: 8,
+        stars: 5,
+        img: "carbon_fiber_tip_round.png",
+      },
+      {
+        name: "Carbon Fiber Exhaust Tip (Oval)",
+        price: 129.99,
+        reviews: 10,
+        stars: 2,
+        img: "carbon_fiber_tip_oval.png",
+      },
+      {
+        name: "Aluminum Exhaust Tip (Square)",
+        price: 79.99,
+        reviews: 6,
+        stars: 3,
+        img: "aluminum_tip_square.png",
+      },
+      {
+        name: "Performance Exhaust Tubing Kit",
+        price: 399.99,
+        reviews: 18,
+        stars: 2,
+        img: "performance_exhaust_kit.png",
+      },
+    ],
   },
   {
-    "Wheels and tires": [
+    category: "Drivetrain_upgrades",
+    products: [
       {
-        "title": "Performance tires",
-        "name": "Michelin Pilot Sport 4S",
-        "price": 259.99,
-        "reviews": 11,
-        "stars": 5
+        name: "Performance Clutch Kit (Blue)",
+        price: 286.49,
+        reviews: 15,
+        stars: 2,
+        img: "performance_clutch_blue.png",
       },
       {
-        "title": "Alloy wheels",
-        "name": "Enkei RPF1 Wheels",
-        "price": 239.99,
-        "reviews": 8,
-        "stars": 4
+        name: "Performance Clutch Kit (Red)",
+        price: 349.99,
+        reviews: 18,
+        stars: 3,
+        img: "performance_clutch_red.png",
       },
       {
-        "title": "Wheel spacers",
-        "name": "Eibach Pro-Spacer Wheel Spacers",
-        "price": 79.99,
-        "reviews": 4,
-        "stars": 4
+        name: "Performance Clutch Kit (Gold)",
+        price: 399.99,
+        reviews: 20,
+        stars: 5,
+        img: "performance_clutch_gold.png",
       },
       {
-        "title": "Wheel alignment kit",
-        "name": "SPC Performance Rear Camber Kit",
-        "price": 119.99,
-        "reviews": 3,
-        "stars": 4
-      }
-    ]
+        name: "Performance Clutch Kit (Silver)",
+        price: 379.99,
+        reviews: 17,
+        stars: 1,
+        img: "performance_clutch_silver.png",
+      },
+      {
+        name: "High-Performance Gear Set",
+        price: 899.99,
+        reviews: 25,
+        stars: 5,
+        img: "high_performance_gear_set.png",
+      },
+      {
+        name: "Limited Slip Differential (LSD)",
+        price: 599.99,
+        reviews: 22,
+        stars: 5,
+        img: "limited_slip_differential.png",
+      },
+      {
+        name: "Complete Transmission Upgrade",
+        price: 1999.99,
+        reviews: 30,
+        stars: 5,
+        img: "complete_transmission_upgrade.png",
+      },
+    ],
   },
   {
-    "Body modifications": [
+    category: "Brake_upgrades",
+    products: [
       {
-        "title": "Front lip spoiler",
-        "name": "APR Performance Carbon Fiber Front Lip Spoiler",
-        "price": 299.99,
-        "reviews": 6,
-        "stars": 5
+        name: "Performance Brake Pads",
+        price: 99.99,
+        reviews: 12,
+        stars: 2,
+        img: "performance_brake_pads.png",
       },
       {
-        "title": "Rear spoiler",
-        "name": "Voltex Type 1S Carbon Fiber Rear Spoiler",
-        "price": 499.99,
-        "reviews": 4,
-        "stars": 5
+        name: "Front Brake Calipers (Gold)",
+        price: 499.99,
+        reviews: 20,
+        stars: 5,
+        img: "front_brake_calipers_gold.png",
       },
       {
-        "title": "Side skirts",
-        "name": "Seibon Carbon Fiber Side Skirts",
-        "price": 399.99,
-        "reviews": 5,
-        "stars": 4
+        name: "Rear Brake Calipers (Silver)",
+        price: 449.99,
+        reviews: 18,
+        stars: 1,
+        img: "rear_brake_calipers_silver.png",
       },
       {
-        "title": "Widebody kit",
-        "name": "Rocket Bunny Pandem Widebody Kit",
-        "price": 1999.99,
-        "reviews": 2,
-        "stars": 5
-      }
-    ]
+        name: "Pair of Front Brake Discs",
+        price: 398.41,
+        reviews: 15,
+        stars: 3,
+        img: "front_brake_discs.png",
+      },
+      {
+        name: "Complete Brake Black Kit (Front and Rear)",
+        price: 899.99,
+        reviews: 25,
+        stars: 5,
+        img: "complete_brake_black_kit.png",
+      },
+      {
+        name: "Complete Brake Yellow Kit (Front and Rear)",
+        price: 899.99,
+        reviews: 25,
+        stars: 3,
+        img: "complete_brake_yellow_kit.png",
+      },
+    ],
   },
   {
-    "Interior upgrades": [
+    category: "Body_enhancements",
+    products: [
       {
-        "title": "Racing seats",
-        "name": "Sparco Evo Racing Seats",
-        "price": 799.99,
-        "reviews": 3,
-        "stars": 5
+        name: "Carbon Fiber Rear Wing",
+        price: 499.99,
+        reviews: 15,
+        stars: 4,
+        img: "carbon_fiber_rear_wing.png",
       },
       {
-        "title": "Steering wheel",
-        "name": "MOMO Mod 07 Steering Wheel",
-        "price": 249.99,
-        "reviews": 4,
-        "stars": 4
+        name: "Carbon Fiber Rear Spoiler 1",
+        price: 399.99,
+        reviews: 12,
+        stars: 1,
+        img: "carbon_fiber_rear_spoiler_1.png",
       },
       {
-        "title": "Short shifter",
-        "name": "B&M Racing Short Shifter",
-        "price": 129.99,
-        "reviews": 5,
-        "stars": 4
-      }
-    ]
+        name: "Carbon Fiber Rear Lip Spoiler 2",
+        price: 349.99,
+        reviews: 10,
+        stars: 4,
+        img: "carbon_fiber_rear_lip_spoiler_2.png",
+      },
+      {
+        name: "Rear Wing (Standard)",
+        price: 245.65,
+        reviews: 10,
+        stars: 3,
+        img: "rear_wing_standard.png",
+      },
+      {
+        name: "Carbon Fiber Front Splitter",
+        price: 234.99,
+        reviews: 10,
+        stars: 3,
+        img: "carbon_fiber_splitter.png",
+      },
+      {
+        name: "Carbon Fiber Front Bumper Lip",
+        price: 403.99,
+        reviews: 10,
+        stars: 3,
+        img: "carbon_fiber_bumper_lip.png",
+      },
+      {
+        name: "Carbon Fiber GT Wing",
+        price: 601.98,
+        reviews: 20,
+        stars: 5,
+        img: "carbon_fiber_gt_wing.png",
+      },
+      {
+        name: "Carbon Fiber Fenders",
+        price: 219.99,
+        reviews: 20,
+        stars: 5,
+        img: "carbon_fiber_fenders.png",
+      },
+      {
+        name: "Fiberglass Fenders",
+        price: 399.99,
+        reviews: 18,
+        stars: 4,
+        img: "fiberglass_fenders.png",
+      },
+      {
+        name: "Plastic Fenders",
+        price: 146.97,
+        reviews: 15,
+        stars: 4,
+        img: "plastic_fenders.png",
+      },
+      {
+        name: "Mesh Grille",
+        price: 149.99,
+        reviews: 12,
+        stars: 4,
+        img: "mesh_grille.png",
+      },
+      {
+        name: "Billet Grille",
+        price: 129.99,
+        reviews: 10,
+        stars: 4,
+        img: "billet_grille.png",
+      },
+      {
+        name: "Carbon Fiber Rear Diffuser",
+        price: 449.99,
+        reviews: 18,
+        stars: 4,
+        img: "carbon_fiber_rear_diffuser.png",
+      },
+      {
+        name: "Rear Diffuser (Plastic)",
+        price: 232.12,
+        reviews: 15,
+        stars: 4,
+        img: "rear_diffuser_plastic.png",
+      },
+      {
+        name: "Carbon Fiber Hood Scoop",
+        price: 35.86,
+        reviews: 12,
+        stars: 4,
+        img: "carbon_fiber_hood_scoop.png",
+      },
+      {
+        name: "Aluminum Hood Scoop",
+        price: 231.15,
+        reviews: 10,
+        stars: 4,
+        img: "aluminum_hood_scoop.png",
+      },
+      {
+        name: "Carbon Fiber Side Skirts",
+        price: 399.99,
+        reviews: 20,
+        stars: 5,
+        img: "carbon_fiber_side_skirts.png",
+      },
+      {
+        name: "Fiberglass Side Skirts",
+        price: 299.99,
+        reviews: 18,
+        stars: 4,
+        img: "fiberglass_side_skirts.png",
+      },
+    ],
   },
-  {
-    "Performance accessories": [
-      {
-        "title": "Turbocharger/supercharger kit",
-        "name": "HKS GT Supercharger System",
-        "price": 3999.99,
-        "reviews": 2,
-        "stars": 5
-      },
-      {
-        "title": "Nitrous oxide kit",
-        "name": "ZEX Nitrous System Kit",
-        "price": 499.99,
-        "reviews": 3,
-        "stars": 4
-      },
-      {
-        "title": "High-flow fuel injectors",
-        "name": "Injector Dynamics ID1050X Fuel Injectors",
-        "price": 499.99,
-        "reviews": 4,
-        "stars": 4
-      },
-      {
-        "title": "Intercooler",
-        "name": "ETS Front Mount Intercooler Kit",
-        "price": 799.99,
-        "reviews": 6,
-        "stars": 4
-      }
-    ]
-  },
-  {
-    "Aerodynamic enhancements": [
-      {
-        "title": "Front splitter",
-        "name": "APR Performance Carbon Fiber Front Splitter",
-        "price": 399.99,
-        "reviews": 3,
-        "stars": 5
-      },
-      {
-        "title": "Rear diffuser",
-        "name": "Varis Carbon Fiber Rear Diffuser",
-        "price": 599.99,
-        "reviews": 2,
-        "stars": 5
-      },
-      {
-        "title": "Canards",
-        "name": "Voltex Type 5 Carbon Fiber Canards",
-        "price": 299.99,
-        "reviews": 4,
-        "stars": 4
-      }
-    ]
-  },
-  {
-    "Drivetrain upgrades": [
-      {
-        "title": "Limited slip differential",
-        "name": "OS Giken Super Lock Limited Slip Differential",
-        "price": 1499.99,
-        "reviews": 3,
-        "stars": 5
-      },
-      {
-        "title": "Performance clutch kit",
-        "name": "ACT Heavy Duty Performance Clutch Kit",
-        "price": 499.99,
-        "reviews": 4,
-        "stars": 4
-      },
-      {
-        "title": "Lightweight flywheel",
-        "name": "Fidanza Aluminum Flywheel",
-        "price": 399.99,
-        "reviews": 5,
-        "stars": 4
-      }
-    ]
-  },
-  {
-    "Exterior lighting": [
-      {
-        "title": "LED headlights",
-        "name": "Morimoto XB LED Headlights",
-        "price": 299.99,
-        "reviews": 6,
-        "stars": 5
-      },
-      {
-        "title": "Taillight tinting",
-        "name": "Lamin-X Tail Light Tint Film",
-        "price": 29.99,
-        "reviews": 8,
-        "stars": 4
-      },
-      {
-        "title": "Fog lights",
-        "name": "Diode Dynamics SS3 LED Fog Light Kit",
-        "price": 199.99,
-        "reviews": 5,
-        "stars": 4
-      }
-    ]
-  }
-]
+];
 
-export default products
+export default products;

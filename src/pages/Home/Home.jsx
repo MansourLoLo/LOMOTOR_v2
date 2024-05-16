@@ -4,7 +4,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import ExploreAllCars from "../../components/explore_all_cars/ExploreAllCars";
 import DiscoverBentoGrids from "../../components/discover-bento-grids/DiscoverBentoGrids";
-import Carrusel from "../../components/carrusel/Carrusel";
+import Carrusel from "../../components/carrusel/Carrusel"
 import Hero from "../../components/hero/Hero";
 
 function Home() {

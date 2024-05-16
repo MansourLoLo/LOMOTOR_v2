@@ -6,6 +6,7 @@ import Home from './pages/Home/Home.jsx'
 import Brand from './pages/Brand/Brand.jsx'
 import Cars from './pages/Cars/Cars.jsx'
 import Contact from './pages/Contact/Contact.jsx'
+import Payments from "./pages/Payments/Payments.jsx"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/Brand' element={<Brand />}/>
         <Route path='/Cars' element={<Cars />}/>
         <Route path='/Contact' element={<Contact />}/>
+        <Route path='/payments' element={<Payments />}/>
       </Routes>
     </BrowserRouter>
     

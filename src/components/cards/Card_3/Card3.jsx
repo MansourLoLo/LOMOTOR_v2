@@ -10,8 +10,21 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
-export default function Card({ img, text1, btnText, price }) {
+export default function Card({ img, text1, btnText, price, gas, transmission, people }) {
   const [liked, setLiked] = useState(false);
+
+  const handleClickRent = () =>{
+    const carsData = {
+      img: img,
+      text1: text1,
+      price: price,
+      gas: gas,
+      transmission: transmission,
+      people: people
+    }
+    localStorage.setItem("rentedCar", JSON.stringify(carsData));
+    window.location.href = '/payments'
+  }
 
   return (
     <>
@@ -36,29 +49,28 @@ export default function Card({ img, text1, btnText, price }) {
         <div className="info-car">
           <div className="gas-container">
             <FontAwesomeIcon icon={faGasPump} />
-            <h3>90 L</h3>
+            <h3>{gas} L</h3>
           </div>
           <div className="drive-container">
             <img
               src="/src/assets/svg_icons/volante.svg"
               alt="SVG img steering wheel"
             />
-            <h3>Manual</h3>
+            <h3>{transmission}</h3>
           </div>
           <div className="passengers-container">
             <FontAwesomeIcon icon={faUsers} />
-            <h3>9 People</h3>
+            <h3>{people} People</h3>
           </div>
         </div>
         <div className="rent-car-container">
           <div className="price-car-container">
             <h1>
-              {" "}
-              ${price}/<span> day </span>
+              ${price}<span> /day </span>
             </h1>
           </div>
           <div className="btn-rent-car-container">
-            <Button1 text={btnText} />
+            <Button1 text={btnText} onClick={handleClickRent} />
           </div>
         </div>
       </div>

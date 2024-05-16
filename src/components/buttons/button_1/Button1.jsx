@@ -1,9 +1,9 @@
 import "./Button1.css"
 
-export default function Button1({text}){
+export default function Button1({text, onClick, submitType }){
   
   return(
-    <button className="btn">
+    <button type={submitType ? "submit" : "text"} className="btn" onClick={onClick}>
       {text}
     </button>
   )
