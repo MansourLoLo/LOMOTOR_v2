@@ -42,7 +42,7 @@ function Home() {
           "Unlock Unbeatable Deals: Where Quality Meets Affordability - Explore Our Impressive Selection of High-Quality Cars at Unbeatable Prices!"
         }
         textBtn={"Discover now"}
-        imgUrl={"/public/assets/svg/hero-images/car_2.png"}
+        imgUrl={"assets/svg/hero-images/car_2.png"}
         reversed={true}
         backgroundImg={false}
       />
