@@ -10,7 +10,7 @@ export default function Card({
   btnText,
   detailsText,
   stars,
-  imgWheel
+  imgWheel,
 }) {
   const starsCount = () => {
     let starArray = [];
