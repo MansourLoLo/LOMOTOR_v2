@@ -41,6 +41,9 @@
       .social-media-icon {
         font-size: 1.8em;
       }
+      .icon-rss{
+        color: var(--primaryColor);
+      }
     }
   }
 

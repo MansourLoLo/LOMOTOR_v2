@@ -23,7 +23,7 @@ export default function Cars() {
 
   console.log(carModels);
 
-  const calculePrice = (fuel_consumption) =>{
+  const calculePrice = (fuel_consumption, ) =>{
     
     const basicPrice = fuel_consumption > 18 ? 70 : 40
     const gas = 1.46
@@ -39,11 +39,11 @@ export default function Cars() {
     <div className="Cars-page-container">
       <Header
         page="home"
-        LogoHeader={"/src/assets/svg/Logo_Lomotor_v2_letras_white.svg"}
+        LogoHeader={"assets/svg/Logo_Lomotor_v2_letras_white.svg"}
       />
       <div id="cars-index-container" className="img-background-container">
         <img
-          src="/public/images/background-cars-page.jpg"
+          src="images/background-cars-page.jpg"
           alt="Img background"
         />
       </div>
@@ -52,7 +52,7 @@ export default function Cars() {
           pretitle={"About us"}
           title={"What We do"}
           paragraph={
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sequi!"
+            "Driving Excellence: Our Mission, Your Satisfaction"
           }
         />
       </section>

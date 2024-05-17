@@ -14,7 +14,7 @@ export default function WhatWeOffer() {
         pretitle={"About us"}
         title={"What We Offer"}
         paragraph={
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sequi!"
+          "Discover Your Dream Ride: Our Exclusive Selection"
         }
       />
 
@@ -26,10 +26,12 @@ export default function WhatWeOffer() {
             title={item.category.replace(/_/g, " ")}
           >
             {item.products.map((product, index) => {
+              let rotateWheel = item.category == "Wheels_and_tyres" ? true : false 
               return (
                 <Card
                   key={index}
-                  img={`/public/images/products/${item.category}/${product.img}`}
+                  img={`/images/products/${item.category}/${product.img}`}
+                  imgWheel={rotateWheel}
                   text1={product.name}
                   text2={`$${product.price}`}
                   text3={`${product.reviews} (reviews)`}

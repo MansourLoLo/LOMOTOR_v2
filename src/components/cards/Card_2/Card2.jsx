@@ -10,6 +10,7 @@ export default function Card({
   btnText,
   detailsText,
   stars,
+  imgWheel
 }) {
   const starsCount = () => {
     let starArray = [];
@@ -40,7 +41,7 @@ export default function Card({
   return (
     <>
       <div className="card2-container">
-        <div className="img-card-container">
+        <div className={`img-card-container ${imgWheel && "rotateWheel"}`}>
           <img src={img} alt="Img card" />
         </div>
 

@@ -2,22 +2,65 @@
 
 Lomotor is inspired by Brabus meticulousness and commitment to excellence, but focused on the world of web development. Just as Brabus elevates car performance and customization to a new level, Lomotor takes web development to an unparalleled dimension of design and functionality. 
 
-![Img page](/public/images/page.png)
+![[page-preview.png]]
 
 ### 🔩 Built With
 
-* [![React][React.js]][React-url]
+- ## React
+- ## Firebase
 
 ---
 ## 🔨 Tools Used
 
-CSS: Pure CSS for styling the web pages.
+**CSS**: Pure CSS for styling the web pages.
 
-FontAwesome: Icon library used for adding aesthetic and functional icons to the projects.
+**FontAwesome**: Icon library used for adding aesthetic and functional icons to the projects.
+
+**Firebase**: For the backend of the page
+
+RSS: XML for 
 
 ---
 
-## Getting Started
+## 🏁 Getting Started
+
+Download the repository from "terceraEntrega" via:
+
+- Comands
+```java
+git clone --branch terceraEntrega git@github.com:MansourLoLo/LOMOTOR_v2.git
+```
+
+- Github Website
+
+Code >> Download Website
+
+#### Firebase api:
+
+Paste your firebase api on "firebase.config.js"
+
+```json
+import { initializeApp } from "firebase/app";
+
+import { get, getDatabase } from "firebase/database";
+
+
+const firebaseConfig = {
+
+  // Your configs
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+// Get info from database
+const db = getDatabase(app);
+
+
+export default db;
+```
+
+Finally
 
 * npm
 ```
@@ -39,9 +82,15 @@ The following tutorials have been instrumental in the development of projects sh
 
   [Animated car website using Html & Css & Js || How to create a website using Html](https://youtu.be/PTDn-yp4JR0?si=WcKMb-IDStPhInBQ) by Magic Code
 
+## ⛓️ External links
+
 **Figma project:** 
 
 https://www.figma.com/file/WFmoNA63QvpzPSGzEocS1U/LOMOTOR-V2?type=design&node-id=0%3A1&mode=design&t=eX6S8QCt2kLUUL8a-1 
+
+Website:
+
+https://lomotor-5bac0.web.app/
 
 ---
 
@@ -159,7 +208,9 @@ The design and functionality of this portfolio have been influenced and inspired
     Page Videos: Use of videos for the webpage.
 
 
-## Source images:
+### 🖼️ Source images:
+
+Some of all the sources that i use for my page, in the brand page products
 
 
 BBS.com
@@ -195,7 +246,6 @@ Google
 	Performance accesories for products
 
 
-
 ---
 
 ## ⚙️ Technologies Used
@@ -211,6 +261,9 @@ Integration of icons to enhance visual appeal and user experience.
 
 ### Leaflet: 
 Interactive JavaScript Maps
+
+### Firebase:
+Backend, hosting and database provider
 
 ---
 
@@ -229,15 +282,5 @@ Interactive JavaScript Maps
 
 For inquiries or collaboration opportunities, feel free to reach out via email at mansour.lolo.06@gmail.com or through LinkedIn.
 
-By Mansour Lo Lo 
-
-
-Por hacer
-
-- rss
-- crud con array json
-- model
-- documentacion
-- animaciones
-- explore all cars
+#### © By Mansour Lo Lo 
 

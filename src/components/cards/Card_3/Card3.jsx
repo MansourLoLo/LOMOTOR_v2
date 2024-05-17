@@ -53,7 +53,7 @@ export default function Card({ img, text1, btnText, price, gas, transmission, pe
           </div>
           <div className="drive-container">
             <img
-              src="/src/assets/svg_icons/volante.svg"
+              src="assets/svg_icons/volante.svg"
               alt="SVG img steering wheel"
             />
             <h3>{transmission}</h3>

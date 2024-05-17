@@ -1,9 +1,9 @@
-import "./Card1.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
+import "./Card1.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-export default function Card({img, text1, text2, icon=false}){
-  return(
+export default function Card({ img, text1, text2, icon = false }) {
+  return (
     <>
       <div className="card1-container">
         <div className="img-card-container">
@@ -14,15 +14,13 @@ export default function Card({img, text1, text2, icon=false}){
             <p>{text1}</p>
           </div>
           <div className="subtext-card">
-            <p>{text2}</p>
-            {
-              icon ?
-              <FontAwesomeIcon icon={faChevronRight}/>
-              : ""
-            }
+            <a href="/cars">
+              <p>{text2}</p>
+            </a> 
+            {icon ? <FontAwesomeIcon icon={faChevronRight} /> : ""}
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }

@@ -75,17 +75,17 @@
       justify-content: space-around;
       font-size: clamp(10px, 3vw, 14px);
 
-      div {
+      & div {
         width: 50%;
         height: 50%;
         object-fit: cover;
       }
-      img {
+      & img {
         width: 30px;
         object-fit: cover;
       }
-      img:hover,
-      svg:hover {
+      & img:hover,
+      & svg:hover {
         transform: translateY(1.1);
       }
     }
@@ -98,6 +98,7 @@
     }
     .drive-container img {
       transition: transform 0.5s ease-in-out;
+      width: 20px;
     }
     .drive-container img:hover {
       animation: infiRotate 0.2s infinite linear;
@@ -108,7 +109,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    h1 {
+    & h1 {
       text-align: start;
       span {
         color: var(--secondaryFontColor);
@@ -116,7 +117,7 @@
       }
     }
     .btn-rent-car-container {
-      button {
+      & button {
         border-radius: 10px;
       }
     }

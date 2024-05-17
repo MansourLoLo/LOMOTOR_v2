@@ -6,13 +6,14 @@ import {
   faGithub,
   faLinkedin,
   faXTwitter,
-  faStackOverflow,
+  faStackOverflow
 } from "@fortawesome/free-brands-svg-icons";
+import { faRss } from "@fortawesome/free-solid-svg-icons"
 import LeafletMap from "../leaflet/LeafletMap";
 
 export default function Footer({
-  logoFooter = "/src/assets/svg/Logo_Lomotor_v2_logo_black.svg",
-  logoFooterCredits = "/src/assets/svg/Logo_Lomotor_v2_logo_black.svg",
+  logoFooter = "assets/svg/Logo_Lomotor_v2_logo_black.svg",
+  logoFooterCredits = "assets/svg/Logo_Lomotor_v2_logo_black.svg",
 }) {
   return (
     <>
@@ -44,6 +45,9 @@ export default function Footer({
             </a>
             <a href="https://github.com/MansourLoLo/LOMOTOR_v2">
               <FontAwesomeIcon className="social-media-icon" icon={faGithub} />
+            </a>
+            <a href="RSS/rss.xml">
+              <FontAwesomeIcon className="social-media-icon icon-rss" icon={faRss} />
             </a>
           </div>
         </div>

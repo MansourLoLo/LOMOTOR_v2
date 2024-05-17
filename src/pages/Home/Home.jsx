@@ -12,8 +12,8 @@ function Home() {
     <>
       <Header
         page="home"
-        LogoHeader={"/src/assets/svg/Logo_Lomotor_v2_letras_white.svg"}
-        LogoNavBar={"/src/assets/svg/Logo_Lomotor_v2_letras_black.svg"}
+        LogoHeader={"assets/svg/Logo_Lomotor_v2_letras_white.svg"}
+        LogoNavBar={"assets/svg/Logo_Lomotor_v2_letras_black.svg"}
       />
 
       {/* <div id="container-video" className="container-video">
@@ -22,12 +22,12 @@ function Home() {
       <section id="Index-home">
         <Hero
           preTitle={""}
-          title={`We have Everything \n Your <span> Car </span> Need`}
+          title={`We have Everything\n Your Car Needs`}
           subtitle={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero nulla sit ipsam reprehenderit nostrum dolorum maxime maiores, rerumdistinctio."
+            "Discover the Ultimate Destination for Your Automotive Dreams: Unveiling a Vast Array of Car Essentials and Accessories Tailored to Your Every Need!"
           }
           textBtn={"Discover now"}
-          imgUrl={"/images/Cars-img/Cars/veloster.png"}
+          imgUrl={"assets/svg/hero-images/car_1.png"}
           reversed={false}
           backgroundImg={true}
         />
@@ -37,17 +37,16 @@ function Home() {
 
       <Hero
         preTitle={"About Us"}
-        title={"Cheap Price With \n Quality Cars"}
+        title={"Cheap Price With Quality Cars"}
         subtitle={
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero nulla sit ipsam reprehenderit nostrum dolorum maxime maiores, rerumdistinctio."
+          "Unlock Unbeatable Deals: Where Quality Meets Affordability - Explore Our Impressive Selection of High-Quality Cars at Unbeatable Prices!"
         }
         textBtn={"Discover now"}
-        imgUrl={"/images/Cars-img/ECO/ioniq.png"}
+        imgUrl={"/public/assets/svg/hero-images/car_2.png"}
         reversed={true}
         backgroundImg={false}
       />
 
-      {/* Porque el boton sube cuando tiene que estar quieto con un position absolute */}
       <ExploreAllCars />
       <Footer />
     </>

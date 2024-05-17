@@ -13,8 +13,8 @@ import {
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 
 export default function Header({
-  LogoNavBar = "/src/assets/svg/Logo_Lomotor_v2_letras_black.svg",
-  LogoHeader = "/src/assets/svg/Logo_Lomotor_v2_letras_black.svg",
+  LogoNavBar = "assets/svg/Logo_Lomotor_v2_letras_black.svg",
+  LogoHeader = "assets/svg/Logo_Lomotor_v2_letras_black.svg",
   page,
 }) {
   const [menuSwitcher, setMenu] = useState(false);

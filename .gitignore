@@ -13,6 +13,9 @@ dist-ssr
 *.local
 .obsidian/
 
+.firebase.config.js
+.data/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

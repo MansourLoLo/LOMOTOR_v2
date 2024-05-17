@@ -7,10 +7,10 @@ import Button1 from "../../components/buttons/button_1/Button1";
 export default function Contact() {
   return (
     <>
-      <Header LogoHeader="/src/assets/svg/Logo_Lomotor_v2_letras_white.svg" />
+      <Header LogoHeader="assets/svg/Logo_Lomotor_v2_letras_white.svg" />
       <section className="contact-us-container">
         <div className="img-container">
-          <img src="/src/assets/svg/img_contact_us.svg" alt="Img contact us" />
+          <img src="assets/svg/img_contact_us.svg" alt="Img contact us" />
         </div>
         <div className="contact-form-container">
           <div className="contact-form">

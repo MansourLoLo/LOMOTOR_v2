@@ -8,7 +8,7 @@ import WhatWeOffer from "../../components/what-we-do/WhatWeOffer";
 export default function Brand() {
   return (
     <>
-      <Header LogoHeader="/src/assets/svg/Logo_Lomotor_v2_letras_white.svg" />
+      <Header LogoHeader="assets/svg/Logo_Lomotor_v2_letras_white.svg" />
       <div id="brand-video-container" className="container-video">
         <Carrusel 
         lateralControl={false} 
