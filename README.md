@@ -2,7 +2,7 @@
 
 Lomotor is inspired by Brabus meticulousness and commitment to excellence, but focused on the world of web development. Just as Brabus elevates car performance and customization to a new level, Lomotor takes web development to an unparalleled dimension of design and functionality. 
 
-![[page-preview.png]]
+![Page preview](public/images/page-preview.png)
 
 ### 🔩 Built With
 
